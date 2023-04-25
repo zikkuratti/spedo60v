@@ -7,7 +7,7 @@
  
  2006  cd spedo/
  
- 2007  nano main.py
+ 2007  nano main.py (вбиваем код)
  
  2008  pip3 install --user --upgrade buildozer
  
