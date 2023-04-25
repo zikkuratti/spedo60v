@@ -25,4 +25,4 @@
  
  2017  buildozer -v android debug deploy
  
- 2019  cd bin/
+ 2019  cd bin/ инсталим апкашку на тельчик
