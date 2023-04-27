@@ -47,15 +47,15 @@ class Converter(App):
             self.charge.text = f'Заряда осталось: {percentcharged:.2f} % батареи'
 
             # амперчасы батареи делим на амперы зарядки и умножаем на коэффицент от 1.2 до 1.6
-            charging_time = round(10.75 - (10.75 * (percentcharged/100)), 2)
+            charging_time = round(10 - (10 * (percentcharged/100)), 2)
             self.oncharge.text = f'Время на подзарядку: {datetime.timedelta(hours=charging_time)}'
 
             # время на ходу 4.5 часа умножаем на процент заряда
-            trip_time = round(4.5 * (percentcharged/100), 2)
+            trip_time = round(3.25 * (percentcharged/100), 2)
             self.trip.text = f'Остаточное время пути: {datetime.timedelta(hours=trip_time)}'
 
             # самокат проходит 64 км, домножаем на процент заряда
-            remaining_distance = round(64 * (percentcharged/100), 2)
+            remaining_distance = round(56 * (percentcharged/100), 2)
             self.distance.text = f'Остаточное расстояние: {remaining_distance} км'
 
 
